@@ -10,7 +10,7 @@ db_con = MySQLdb.connect(host="db.soic.indiana.edu", port = 3306,user=string, pa
 cursor = db_con.cursor()
 
 ###when transaction occurs
-#get old price
+# get old price
 def get_oldprice(cursor, songname):
     try:
         SQL="SELECT Price FROM Song WHERE Song_Name = '"+str(songname)+"';"
